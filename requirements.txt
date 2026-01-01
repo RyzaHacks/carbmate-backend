@@ -1,7 +1,13 @@
 fastapi==0.115.0
-pydantic==2.8.2
 uvicorn[standard]==0.30.6
 requests==2.32.3
-mistralai==1.9.2
-mangum==0.17.0
 python-multipart==0.0.9
+mangum==0.17.0
+
+# AI SDK (compatible)
+mistralai==1.9.2
+
+# Pydantic fix (must satisfy mistralai)
+pydantic==2.11.0
+pydantic-core==2.32.0
+typing-extensions>=4.15.0
